@@ -26,6 +26,7 @@ Y1 = normpdf(X, mu, sigma);
 Y2 = my_normpdf(X, mu, sigma);
 assert(sum(Y1 == Y2) == 0);
 assert(sum(isnan(Y1) - ones(2,1)) == 0);
+assert(sum(isnan(Y2) - ones(2,1)) == 0);
 
 tic
 for i=1:1000
