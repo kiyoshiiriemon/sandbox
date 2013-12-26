@@ -48,4 +48,4 @@ for i=1:1000
 end
 t2 = toc
 
-fprintf(1, 'normpdf time %f, my_normpdf time %f\n', t1, t2);
+fprintf(1, 'normpdf time %f sec, my_normpdf time %f sec\n', t1, t2);
