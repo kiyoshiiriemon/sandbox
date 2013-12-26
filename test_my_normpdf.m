@@ -36,7 +36,7 @@ for i=1:1000
 
     Y1 = normpdf(X, mu, sigma);
 end
-toc
+t1 = toc
 
 tic
 for i=1:1000
@@ -46,5 +46,6 @@ for i=1:1000
 
     Y1 = my_normpdf(X, mu, sigma);
 end
-toc
+t2 = toc
 
+fprintf(1, 'normpdf time %f, my_normpdf time %f\n', t1, t2);
